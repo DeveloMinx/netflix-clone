@@ -59,6 +59,7 @@
 }
 
 .font-container {
+  position: relative;
   width: 100%;
   height: 775px;
   background-image: url("../../../assets/img/portada.jpg");
@@ -66,6 +67,18 @@
   background-size: cover;
   background-position: center center;
   border-bottom: 8px solid #222;
+  z-index: 0;
+}
+.cover-image{
+  position: absolute;
+  top: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  background-image: linear-gradient(to top right , transparent 46%,rgba(12, 13, 19, 0.5) 68%, 
+  rgba(12, 13, 19) 97%), linear-gradient(to top left , transparent 46%,rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%), linear-gradient(to bottom right , transparent 46%,rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%), linear-gradient(to bottom left , transparent 46%,rgba(12, 13, 19, 0.5) 68%, rgba(12, 13, 19) 97%);
+  z-index: -1;
+
 }
 .info-container-conten {
   display: flex;
@@ -115,7 +128,6 @@ h4 {
   }
   .input-submit{
     position: relative;
-    background-color: aqua;
   }
 .input-submit input{
   position: relative;

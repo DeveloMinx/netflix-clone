@@ -108,7 +108,7 @@ h4 {
 }
 .info-container div h2 {
   font-size: 1.7rem;
-}
+} 
 .allText-container {
   display: flex;
   flex-direction: column;
@@ -117,19 +117,24 @@ h4 {
 }
 .inputbox input {
   border-radius: 2px;
-  border: none;
+  border: 1px solid rgb(133, 131, 131);
   padding-left: 10px;
   width: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color:rgb(32, 32, 32, 0.5);
+  margin-right: 10px;
 }
 .inputbox input:focus {
-    outline: none;
+
+  outline: 2px solid white;
+  outline-offset: 2px;
   }
   .input-submit{
     position: relative;
   }
 .input-submit input{
+  cursor: pointer;
   position: relative;
   font-size: 1.625rem;
   background-color: #e50914;

@@ -8,6 +8,9 @@ import { Info1Component } from './components/info1/info1.component';
 import { Info2Component } from './components/info2/info2.component';
 import { Info3Component } from './components/info3/info3.component';
 import { Info4Component } from './components/info4/info4.component';
+import { Info5Component } from './components/info5/info5.component';
+import { SharedComponent } from './components/shared/shared.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { Info4Component } from './components/info4/info4.component';
     Info1Component,
     Info2Component,
     Info3Component,
-    Info4Component
+    Info4Component,
+    Info5Component,
+    SharedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

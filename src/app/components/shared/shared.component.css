@@ -1,0 +1,79 @@
+.shared-container{
+    display: flex;
+    justify-content: center;
+}
+
+  .inputbox input {
+    border-radius: 2px;
+    border: 1px solid rgb(133, 131, 131);
+    padding-left: 10px;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(32, 32, 32, 0.5);
+    margin-right: 10px; 
+  }
+  .inputbox input:focus {
+  
+    outline: 2px solid white;
+    outline-offset: 2px;
+    }
+    .input-submit{
+      position: relative;
+    }
+  .input-submit input{
+    cursor: pointer;
+    position: relative;
+    font-size: 1.625rem;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 13px 40px 13px 20px;
+    margin: 0;
+    border-left: solid 1px #222;
+  }
+  .input-submit i{
+      position: absolute;
+      left: 85%;
+      top: 38%;
+      color: #fff;
+  }
+  @media (max-width:700px){
+    .shared-container {
+     padding-left: 60px;
+     padding-right: 60px; 
+    }
+    .inputbox{
+      width: 100%;
+    }
+    .inputbox input{
+      width: 100%;
+    }
+    .input-submit{
+      margin-left: 20px;
+    }
+}
+@media (max-width:600px){
+  .shared-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .input-submit{
+    margin-top: 15px;
+  }
+  .input-submit input{
+    cursor: pointer;
+    position: relative;
+    font-size: 1.625rem;
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 8px 30px 8px 15px;
+
+  }
+}
+  

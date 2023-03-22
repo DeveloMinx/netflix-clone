@@ -7,7 +7,7 @@
 }
 .logo-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
 
   height: 80px;
@@ -61,7 +61,8 @@
 .font-container {
   position: relative;
   width: 100%;
-  height: 775px;
+  height: auto;
+  padding-bottom: 150px;
   background-image: url("../../../assets/img/portada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,11 +104,24 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-.info-container div h1 {
-  font-size: 4rem;
+.title-container{
+  min-width: 100vw;
 }
-.info-container div h2 {
-  font-size: 1.7rem;
+.info-container div h1 {
+  margin-top: 200px;
+  font-size: 2.7rem;
+  font-weight: 900;
+  padding: 0px 40px;
+}
+.info-container div h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0px 40px;
+} 
+.info-container div h4 {
+  padding: 0px 40px;
+  font-size: 1.2rem;
+  font-weight: 300;
 } 
 .allText-container {
   display: flex;
@@ -115,41 +129,7 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-.inputbox input {
-  border-radius: 2px;
-  border: 1px solid rgb(133, 131, 131);
-  padding-left: 10px;
-  width: 400px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color:rgb(32, 32, 32, 0.5);
-  margin-right: 10px;
-}
-.inputbox input:focus {
 
-  outline: 2px solid white;
-  outline-offset: 2px;
-  }
-  .input-submit{
-    position: relative;
-  }
-.input-submit input{
-  cursor: pointer;
-  position: relative;
-  font-size: 1.625rem;
-  background-color: #e50914;
-  border: none;
-  color: #fff;
-  border-radius: 2px;
-  padding: 13px 40px 13px 20px;
-  margin: 0;
-  border-left: solid 1px #222;
-}
-.input-submit i{
-    position: absolute;
-    left: 85%;
-    color: #fff;
-}
 .allText-container div:nth-child(1){
     margin-bottom: 30px;
 }
@@ -159,24 +139,48 @@ h4 {
 .allText-container div:nth-child(3){
     margin-bottom: 30px;
 }
-@media (max-width:900px) {
-    .input-submit{
-        margin-top: 30px;
-    }
-    .input-submit input{
-        font-size: 1rem;
-        padding: 10px 40px 10px 20px;
-        border-left:0;
-      }
-   .shared-container{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-   }
-   .input-submit i{
-    position: absolute;
-    left: 80%;
-    color: #fff;
+@media (max-width:960px) {
+  .info-container div h1 {
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .info-container div h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+  } 
+  .info-container div h4 {
+    font-weight: 400;
+    font-size: 1.125rem;
+  } 
+  .logo-container {
+    height: 80px;
+    width: 150px;
+  }
+  .logo-container img {
+    width: 100px;
+  }
+  .font-container {
+    padding-bottom: 90px;
+  }
+}
+@media (max-width:600px) {
+  .info-container div h1 {
+    margin-top: 60px;
+  }
+
+  .font-container {
+    padding-bottom: 30px;
+  }
+  .info-container div h1 {
+    padding: 0px 20px;
+  }
+  .info-container div h3 {
+    padding: 0px 20px;
+  } 
+  .info-container div h4 {
+    padding: 0px 20px;
+  } 
 }
 
-}
+

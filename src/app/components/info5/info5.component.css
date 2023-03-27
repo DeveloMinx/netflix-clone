@@ -10,7 +10,7 @@
   }
   .title-info5{
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 20px; 
     margin-bottom: 30px;
     color: #ffffff;
   }
@@ -86,3 +86,45 @@
 
 
     
+@media (max-width:1295px) {
+  .acor-conten{
+    width: 90%;
+  }
+  .info5-extra p{
+
+  padding: 0px 80px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.875rem;
+}
+}
+@media (max-width:960px) {
+  .title-info5 h3{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .info5-extra p{
+
+    padding: 0px 60px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.675rem;
+  }
+
+}
+@media (max-width:600px) {
+  .titles-acor span{
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+
+  .title-info5 h3{
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .info5-extra p{
+    padding: 0px 30px;
+  }
+}

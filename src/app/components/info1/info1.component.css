@@ -1,14 +1,14 @@
 .info1-container{
     background-color: black;
     width: 100%;
-    height: 600px;
+    height: auto;
     border-bottom: 8px solid #222;
-    padding-bottom: 30px;
 }
 .info1-title{
     color: #fff;
     font-family: sans-serif;
     font-size: 2rem;
+    font-weight: 900;
     margin-bottom: 15px;
 }
 .animation1-conten{
@@ -27,7 +27,7 @@
 .animation1-conten video{
     position: absolute;
     width: 370px;
-    top: 187px;
+    top: 188px;
     left: 115px;
     z-index: 1;
     
@@ -46,12 +46,13 @@
     grid-area: conten;
 }
 .info1-conten-conten{
-    width: 600px;
+
+    width: 70%;
     height: auto;
 }
 .info1-descrip{
     color: #fff;
-    width: 80%;
+    width: 100%;
     font-size: 25px;
     font-family: sans-serif;
 }
@@ -64,3 +65,105 @@
     grid-template-rows:600px;
     grid-template-columns: 50% 50%;
 }
+
+@media (max-width:1295px) {
+    .info1-conten{
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    .info1-conten-conten{
+        width: 90%;
+    }
+    .info1-animation{
+        grid-area: animation;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .animation1-conten img{
+        width: 90%;
+        padding-right: 30px;
+    }
+    .animation1-conten video{
+        width: 75%;
+        top: 182px;
+        left: 15%; 
+    }
+    .animation1-conten{
+        justify-content: flex-end;
+    }
+  }
+  @media (max-width:960px) {
+    .info1-grid-container{
+        display: grid;
+        grid-template-areas: 'conten'
+                            'animation';
+        grid-template-rows:200px auto;
+        grid-template-columns: 100%;
+    }
+    .info1-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .info1-conten{
+        padding-left: 0px;
+    }
+    .info1-conten-conten{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .info1-title{
+        text-align: center;
+    }
+    .info1-title h2{
+        padding: 0px 30px;
+    }
+    .info1-descrip{
+        font-size: 1.1rem;
+        font-weight: 500;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .info1-descrip p{
+        padding: 0px 30px;
+    }
+
+
+    .animation1-conten{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        height: auto;
+        width: 100%;
+    }
+    .animation1-conten img{
+        position: relative;
+        padding-right: 0px;
+        width: 86%;
+        z-index: 2;
+    }
+    .animation1-conten video{
+        position: absolute;
+        width: 67%;
+        top: 16%;
+        left: 18%;
+        z-index: 1;
+        
+    }
+
+  }
+  @media (max-width:600px) {
+    .info1-title h2{
+        padding: 0px 15px;
+    }
+    .info1-descrip p{
+        padding: 0px 15px;
+    }
+  }
+  

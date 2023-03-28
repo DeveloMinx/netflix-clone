@@ -1,7 +1,7 @@
 .info2-container{
     background-color: black;
     width: 100%;
-    height: 600px;
+    height: auto;
     border-bottom: 8px solid #222;
     padding-bottom: 30px;
 }
@@ -32,10 +32,12 @@
 }
 .info2-animation{
     grid-area: animation;
-    position: relative;
     display: flex;
     justify-content: end;
     align-items: center;
+}
+.animation2-conten{
+    position: relative;
 }
 
 
@@ -92,3 +94,110 @@
     width: 50px;
     padding-left: 5px;
 }
+
+
+
+
+
+@media (max-width:1295px) {
+    .info2-conten-conten{
+        width: 100%;
+    }
+ 
+    .info2-descrip{
+        width: 100%;
+    }
+    .animation2-conten{
+        display: flex;
+        justify-content: center;
+    }
+    .animation2-conten img{
+        width: 100%;
+    }
+    .animation-download-container{
+        width: 63%;
+        top: 80%;
+        left: 17%;
+    }
+    .post-image img{
+        padding-left: 10px;
+        width: 60px;
+    }
+    .conten-animation-download{
+        width: 50px;
+    }
+  }
+  @media (max-width:960px) {
+    .info2-grid-container{
+        display: grid;
+        grid-template-areas: 'conten'
+                            'animation';
+        grid-template-rows: 30% auto;
+        grid-template-columns: 100%;
+    }
+    .info2-conten-conten{
+        text-align: center;
+        background-color: aquamarine;
+    }
+    .info2-title{
+        padding: 0px 20px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        background-color: brown;
+    }
+    .info2-descrip{
+        padding: 0px 20px;
+        background-color: cornflowerblue;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .animation2-conten{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .animation2-conten img{
+        position: relative;
+        width: 90%;
+    }
+    .info2-container{
+        background-color: black;
+        width: 100%;
+        height: auto;
+        border-bottom: 8px solid #222;
+        padding-bottom: 80px;
+    }
+    .animation-download-container{
+        top:75%;
+        left: 21%;
+        width: 55%;
+        height: 80px;
+    }
+    .post-image img{
+        width: 60%;
+        padding-left: 0px;
+    }
+    .text-animation-download h3{
+        font-size: 15px;
+    }
+    .text-animation-download p{
+        font-size: 12px;
+    }
+  }
+  @media (max-width:600px) {
+    .animation-download-container{
+        top:75%;
+        left: 21%;
+        height: 60px;
+    }
+    .text-animation-download h3{
+        font-size: 12px;
+    }
+    .text-animation-download p{
+        font-size: 10px;
+    }
+  }
+
+  
+
+

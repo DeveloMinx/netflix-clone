@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     border-bottom: 8px solid #222;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 
@@ -137,19 +137,19 @@
     }
     .info2-conten-conten{
         text-align: center;
-        background-color: aquamarine;
     }
     .info2-title{
         padding: 0px 20px;
         font-size: 1.3rem;
         font-weight: 700;
-        background-color: brown;
     }
     .info2-descrip{
-        padding: 0px 20px;
-        background-color: cornflowerblue;
+        max-width: 100%;
         font-size: 1.1rem;
         font-weight: 500;
+    }
+    .info2-descrip p{
+        padding: 0px 20px;
     }
 
     .animation2-conten{
@@ -161,17 +161,14 @@
         width: 90%;
     }
     .info2-container{
-        background-color: black;
-        width: 100%;
-        height: auto;
-        border-bottom: 8px solid #222;
         padding-bottom: 80px;
     }
+
     .animation-download-container{
-        top:75%;
+        top:80%;
         left: 21%;
         width: 55%;
-        height: 80px;
+        height: 90px;
     }
     .post-image img{
         width: 60%;
@@ -182,6 +179,9 @@
     }
     .text-animation-download p{
         font-size: 12px;
+    }
+    .info2-animation{
+        margin-bottom: 60px;
     }
   }
   @media (max-width:600px) {
@@ -195,6 +195,34 @@
     }
     .text-animation-download p{
         font-size: 10px;
+    }
+    .info2-container{
+        padding-bottom: 0px;
+    }
+    .info2-grid-container{
+       padding-top: 30px;
+    }
+    .info2-animation{
+        margin-bottom: 0px;
+    }
+  }
+  @media (max-width:480px) {
+    .animation-download-container{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 230px;
+    }
+    .conten-animation-down{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 70%;
+    }
+    .conten-animation-download{
+        width: 40px;
     }
   }
 

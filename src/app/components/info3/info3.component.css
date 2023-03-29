@@ -124,7 +124,7 @@
         grid-template-columns: 100%;
     }
     .info3-title{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 700;
     }
     .info3-conten{
@@ -177,7 +177,6 @@
         top: 8%;
         left: 23%;
         z-index: 1;
-        
     }
 
   }
@@ -187,6 +186,9 @@
     }
     .info3-descrip p{
         padding: 0px 15px;
+    }
+    .info3-grid-container{
+        padding-top: 30px;
     }
   }
   

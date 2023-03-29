@@ -1,7 +1,7 @@
 .info4-container{
     background-color: black;
     width: 100%;
-    height: 600px;
+    height: auto;
     border-bottom: 8px solid #222;
     padding-bottom: 30px;
 }
@@ -46,49 +46,65 @@
     grid-template-columns: 50% 50%;
 }
 
-.animation-download-container{
-    position: absolute;
-    right: 120px;
-    top: 400px;
-    width: 400px;
-    height: 100px;
-    border: solid 2px #222;
-    background-color: black;
-    border-radius: 10px;
+
+
+
+
+
+@media (max-width:1295px) {
+.info4-conten-conten{
+    width: 100%;
+}
+.animation4-conten img{
+    margin-left: 20px;
+    width: 90%;
+}
+
+.info4-title h2{
+    padding-right: 20px;
+}
+.info4-descrip p{
+    padding-right: 20px;
+}
+  }
+  @media (max-width:960px) {
+    
+.info4-grid-container{
     display: grid;
-    grid-template-areas: 'portada texto descarga';
-    grid-template-columns: 20% auto 20% ;
-    grid-template-rows: 100%;
+    grid-template-areas: 'conten'
+                        'animation';
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
 }
-.post-image{
-    display: flex;
+.info4-conten-conten{
+    text-align: center;
+}
+.info4-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.info4-descrip{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.info4-title h2{
+    padding: 0px 20px;
+}
+.info4-descrip p{
+    padding: 0px 20px;
+}
+.info4-animation{
     justify-content: center;
-    align-items: center;
-    grid-area: portada;
+
 }
-.post-image img{
-    width: 60px;
+.animation4-conten{
+    padding: 0px 20px;
 }
-.text-animation-download{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-    grid-area: texto;
-    font-family: sans-serif;
+.animation4-conten img{
+    margin-left: 0px;
+    width: 100%;
 }
-.text-animation-download h3{
-    color: #fff;
+.info4-grid-container{
+    padding-top: 60px;
 }
-.text-animation-download p{
-    color: rgb(33, 67, 158);
-}
-.conten-animation-download{
-    grid-area: descarga;
-    display: flex;
-    align-items: center;
-}
-.conten-animation-download img{
-    width: 50px;
-    padding-left: 5px;
-}
+  }

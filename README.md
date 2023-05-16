@@ -1,3 +1,10 @@
+# Netflix Homepage Recreation
+Este proyecto es una recreación de la página principal de Netflix utilizando Angular. 
+El objetivo principal es demostrar mis habilidades de desarrollo web y mi comprensión de los conceptos básicos de diseño de interfaces.
+
+![image](https://github.com/DeveloMinx/netflix-clone/assets/123894512/9cbe76f1-c999-43c0-8c15-00ce98cb7270)
+
+
 # NetflixClone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
